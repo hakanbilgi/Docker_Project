@@ -1,0 +1,30 @@
+Docker'ı kullanmanız kaynak kullanımını geliştirerek
+daha hızlı kod göndermenize,
+uygulama işlemlerini standart hale getirmenize,
+kodu sorunsuz bir şekilde taşımanıza ve
+tasarruf etmenize imkan tanır.
+.................................
+terzi kıyafet dikecek;
+dockerfile -> terzinin kalıp oluşturmak için aldığı ölçüler
+image -> alınan ölçüler ile oluşturulan kalıp
+container -> terzinin kalıbı kullanarak her diktiği kıyafet (edited) 
+....................................
+Docker Image -> Windows Kurulum CD'si
+Docker Container -> Windows'un çalışan hali.
+
+Docker için bilgisayarda (Windows) CMD de powershell ini yönetici olarak açıp aşagıdaki adımları sırayla takip edin....
+
+#---dokümantasyonu
+https://learn.microsoft.com/en-us/windows/wsl/install-manual
+
+bunu yapistır enter yap
+1---dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+
+bunu yapistır enter yap
+2---dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+
+bunu indirip kurun
+3---https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi (edited) 
+
+bunu yapistır enter yap
+4---wsl --set-default-version 2
